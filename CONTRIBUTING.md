@@ -1,6 +1,6 @@
 # 贡献指南
 
-感谢您考虑为 file-util 项目做出贡献！这个文档提供了一些指导方针和最佳实践，以帮助您的贡献过程更加顺利。
+感谢您考虑为 file-opt 项目做出贡献！这个文档提供了一些指导方针和最佳实践，以帮助您的贡献过程更加顺利。
 
 ## 目录
 
@@ -60,8 +60,8 @@
 
 1. 克隆仓库：
    ```bash
-   git clone https://github.com/yourusername/file-util.git
-   cd file-util
+   git clone https://github.com/yourusername/file-opt.git
+cd file-opt
    ```
 
 2. 安装依赖：

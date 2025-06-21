@@ -1,4 +1,6 @@
-# file-util API 文档
+# file-opt API 文档
+
+欢迎使用 file-opt 的 API 文档。这里详细介绍了库中可用的所有函数和类型定义。
 
 ## 目录
 

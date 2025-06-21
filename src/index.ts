@@ -1,7 +1,12 @@
 /**
- * file-util
- * 文件和图片操作工具库
+ * file-opt
+ *
+ * @description A utility library for file and image operations, including conversions between Base64, Blob, File, and URL.
+ * @author chao921125
+ * @date 2024-07-17
  */
+
+import { fileToBase64, base64ToBlob, base64ToFile } from './file';
 
 // 导出所有文件操作相关函数
 export * from './file';

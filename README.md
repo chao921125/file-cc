@@ -1,9 +1,12 @@
-# file-util
+# file-opt
 
 一个用于文件和图片操作的工具库，提供各种格式之间的转换功能。支持在浏览器环境中使用，可以轻松实现文件格式转换、图片压缩和格式转换等功能。
 
-[![npm version](https://img.shields.io/npm/v/file-util.svg)](https://www.npmjs.com/package/file-util)
-[![license](https://img.shields.io/npm/l/file-util.svg)](https://github.com/chao921125/file-util/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/file-opt.svg)](https://www.npmjs.com/package/file-opt)
+[![license](https://img.shields.io/npm/l/file-opt.svg)](https://github.com/chao921125/file-opt/blob/main/LICENSE)
+[![npm downloads](https://img.shields.io/npm/dm/file-cc.svg)](https://www.npmjs.com/package/file-opt)
+
+[English](./README.en.md) | 简体中文
 
 ## 特性
 
@@ -36,22 +39,29 @@
 
 ## 安装
 
+### npm
+
 ```bash
-# 使用 npm
-npm install file-util
+npm install file-opt
+```
 
-# 使用 yarn
-yarn add file-util
+### yarn
 
-# 使用 pnpm
-pnpm add file-util
+```bash
+yarn add file-opt
+```
+
+### pnpm
+
+```bash
+pnpm add file-opt
 ```
 
 ## 使用示例
 
 ### ES模块导入
 ```javascript
-import { fileToBase64, imgCompress } from 'file-util';
+import { fileToBase64, imgCompress } from 'file-opt';
 
 // 文件转Base64
 fileToBase64(file).then(base64 => {
@@ -66,7 +76,7 @@ imgCompress(imageFile, { quality: 0.8 }).then(compressedFile => {
 
 ### CommonJS导入
 ```javascript
-const { fileToBase64, imgCompress } = require('file-util');
+const { fileToBase64, imgCompress } = require('file-opt');
 
 // 文件转Base64
 fileToBase64(file).then(base64 => {
@@ -77,9 +87,9 @@ fileToBase64(file).then(base64 => {
 ### 在浏览器中使用
 ```html
 <!-- 通过 CDN 引入 -->
-<script src="https://unpkg.com/file-util/dist/index.umd.js"></script>
+<script src="https://unpkg.com/file-opt/dist/index.umd.js"></script>
 <!-- 或者 -->
-<script src="https://cdn.jsdelivr.net/npm/file-util/dist/index.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-opt/dist/index.umd.js"></script>
 
 <script>
   // 全局变量 FileUtil
@@ -148,7 +158,7 @@ const compressedFile = await imgCompress(imageFile, {
 console.log(`原大小: ${imageFile.size}, 压缩后: ${compressedFile.size}`);
 ```
 
-更多 API 详情请查看 [完整 API 文档](https://github.com/chao921125/file-util/blob/main/docs/API.md)。
+更多 API 详情请查看 [完整 API 文档](https://github.com/chao921125/file-opt/blob/main/docs/API.md)。
 
 ## 浏览器兼容性
 

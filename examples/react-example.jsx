@@ -1,7 +1,7 @@
 /**
- * file-util React 示例
+ * file-opt React 示例
  * 
- * 这个示例展示了如何在React应用中使用file-util库
+ * 这个示例展示了如何在React应用中使用file-opt库
  * 注意：这只是一个示例组件，需要在React项目中使用
  */
 
@@ -12,7 +12,7 @@ import {
   imgCompress,
   imgConvert,
   checkFileType
-} from 'file-util'; // 假设已经安装了file-util包
+} from 'file-opt'; // 假设已经安装了file-opt包
 
 const FileUtilDemo = () => {
   const [base64Result, setBase64Result] = useState('');
@@ -125,8 +125,8 @@ const FileUtilDemo = () => {
   };
 
   return (
-    <div className="file-util-demo">
-      <h1>file-util React 示例</h1>
+    <div className="file-opt-demo">
+      <h1>file-opt React 示例</h1>
 
       <div className="demo-section">
         <h2>文件转Base64</h2>
@@ -185,7 +185,7 @@ const FileUtilDemo = () => {
       </div>
 
       <style jsx>{`
-        .file-util-demo {
+        .file-opt-demo {
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
           max-width: 800px;
           margin: 0 auto;

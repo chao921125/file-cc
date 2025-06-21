@@ -1,5 +1,5 @@
 /**
- * file-util Node.js 示例
+ * file-opt Node.js 示例
  * 
  * 注意：这个示例需要在构建库后运行
  * 运行方法：node examples/node-example.js

@@ -9,7 +9,7 @@ export default [
   {
     input: 'src/index.ts',
     output: {
-      name: 'FileUtil',
+      name: 'FileCC',
       file: 'dist/index.umd.js',
       format: 'umd',
       exports: 'named',

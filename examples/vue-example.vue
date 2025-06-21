@@ -1,13 +1,13 @@
 <!--
-  file-util Vue 示例
+  file-opt Vue 示例
   
-  这个示例展示了如何在Vue应用中使用file-util库
+  这个示例展示了如何在Vue应用中使用file-opt库
   注意：这只是一个示例组件，需要在Vue项目中使用
 -->
 
 <template>
-  <div class="file-util-demo">
-    <h1>file-util Vue 示例</h1>
+  <div class="file-opt-demo">
+    <h1>file-opt Vue 示例</h1>
 
     <div class="demo-section">
       <h2>文件转Base64</h2>
@@ -64,7 +64,7 @@ import {
   imgCompress,
   imgConvert,
   checkFileType
-} from 'file-util'; // 假设已经安装了file-util包
+} from 'file-opt'; // 假设已经安装了file-opt包
 
 export default {
   name: 'FileUtilDemo',
@@ -185,7 +185,7 @@ export default {
 </script>
 
 <style scoped>
-.file-util-demo {
+.file-opt-demo {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   max-width: 800px;
   margin: 0 auto;

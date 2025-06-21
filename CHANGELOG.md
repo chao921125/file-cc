@@ -1,8 +1,9 @@
 # 更新日志
 
-所有对 file-util 项目的显著更改都将记录在此文件中。
+所有对 file-opt 项目的显著更改都将记录在此文件中。
 
-本项目遵循 [语义化版本控制](https://semver.org/lang/zh-CN/)。
+该文件遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/) 的约定，
+并且该项目遵循 [语义化版本](https://semver.org/lang/zh-CN/spec/v2.0.0.html)。
 
 ## [未发布]
 

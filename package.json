@@ -1,10 +1,10 @@
 {
-  "name": "file-util",
-  "version": "1.0.0",
-  "description": "A utility library for file and image operations, including conversions between Base64, Blob, File, and URL",
+  "name": "file-opt",
+  "version": "1.2.6",
+  "description": "File operations, including file to Base64, image compression, and other file-related utilities, suitable for both browser and Node.js environments.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
@@ -28,13 +28,13 @@
   ],
   "author": "chao921125",
   "license": "MIT",
-  "homepage": "https://github.com/chao921125/file-util",
+  "homepage": "https://github.com/chao921125/file-opt",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chao921125/file-util.git"
+    "url": "git+https://github.com/chao921125/file-opt.git"
   },
   "bugs": {
-    "url": "https://github.com/chao921125/file-util/issues"
+    "url": "https://github.com/chao921125/file-opt/issues"
   },
   "publishConfig": {
     "access": "public"

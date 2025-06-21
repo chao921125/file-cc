@@ -1,5 +1,9 @@
 /**
- * file-util 类型定义文件
+ * file-opt 类型定义文件
+ *
+ * @description 包含库中所有公开的类型定义
+ * @author chao921125
+ * @date 2024-07-17
  */
 
 // 图片格式类型
