@@ -1,5 +1,5 @@
 {
-  "name": "@chao921125/file-util",
+  "name": "file-util",
   "version": "1.0.0",
   "description": "A utility library for file and image operations, including conversions between Base64, Blob, File, and URL",
   "main": "dist/index.js",

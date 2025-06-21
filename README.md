@@ -1,9 +1,9 @@
-# @chao921125/file-util
+# file-util
 
 一个用于文件和图片操作的工具库，提供各种格式之间的转换功能。支持在浏览器环境中使用，可以轻松实现文件格式转换、图片压缩和格式转换等功能。
 
-[![npm version](https://img.shields.io/npm/v/@chao921125/file-util.svg)](https://www.npmjs.com/package/@chao921125/file-util)
-[![license](https://img.shields.io/npm/l/@chao921125/file-util.svg)](https://github.com/chao921125/file-util/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/file-util.svg)](https://www.npmjs.com/package/file-util)
+[![license](https://img.shields.io/npm/l/file-util.svg)](https://github.com/chao921125/file-util/blob/main/LICENSE)
 
 ## 特性
 
@@ -38,20 +38,20 @@
 
 ```bash
 # 使用 npm
-npm install @chao921125/file-util
+npm install file-util
 
 # 使用 yarn
-yarn add @chao921125/file-util
+yarn add file-util
 
 # 使用 pnpm
-pnpm add @chao921125/file-util
+pnpm add file-util
 ```
 
 ## 使用示例
 
 ### ES模块导入
 ```javascript
-import { fileToBase64, imgCompress } from '@chao921125/file-util';
+import { fileToBase64, imgCompress } from 'file-util';
 
 // 文件转Base64
 fileToBase64(file).then(base64 => {
@@ -66,7 +66,7 @@ imgCompress(imageFile, { quality: 0.8 }).then(compressedFile => {
 
 ### CommonJS导入
 ```javascript
-const { fileToBase64, imgCompress } = require('@chao921125/file-util');
+const { fileToBase64, imgCompress } = require('file-util');
 
 // 文件转Base64
 fileToBase64(file).then(base64 => {
@@ -77,9 +77,9 @@ fileToBase64(file).then(base64 => {
 ### 在浏览器中使用
 ```html
 <!-- 通过 CDN 引入 -->
-<script src="https://unpkg.com/@chao921125/file-util/dist/index.umd.js"></script>
+<script src="https://unpkg.com/file-util/dist/index.umd.js"></script>
 <!-- 或者 -->
-<script src="https://cdn.jsdelivr.net/npm/@chao921125/file-util/dist/index.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-util/dist/index.umd.js"></script>
 
 <script>
   // 全局变量 FileUtil
