@@ -1,6 +1,6 @@
 {
   "name": "file-opt",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "File operations, including file to Base64, image compression, and other file-related utilities, suitable for both browser and Node.js environments.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
