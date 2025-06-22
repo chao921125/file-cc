@@ -61,7 +61,7 @@
 1. 克隆仓库：
    ```bash
    git clone https://github.com/yourusername/file-opt.git
-cd file-opt
+   cd file-opt
    ```
 
 2. 安装依赖：
@@ -134,4 +134,4 @@ cd file-opt
 
 ---
 
-再次感谢您的贡献！如果您有任何问题，请随时在 Issues 中提问。
+再次感谢您的贡献！如果您有任何问题，请随时在 Issues 中提问。 
