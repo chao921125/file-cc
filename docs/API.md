@@ -21,6 +21,7 @@
   - [dataURLtoFile](#dataurltofile)
   - [imgConvert](#imgconvert)
   - [imgCompress](#imgcompress)
+  - [convertImageFormat](#convertimageformat)
 - [工具函数](#工具函数)
   - [类型检查](#类型检查)
   - [文件类型处理](#文件类型处理)
@@ -384,6 +385,31 @@ const compressedFile = await imgCompress(imageFile, {
   maxHeight: 600
 });
 console.log(`原大小: ${imageFile.size}, 压缩后: ${compressedFile.size}`);
+```
+
+### convertImageFormat
+
+图片格式互转（Node.js 环境，依赖 sharp）
+
+```typescript
+async function convertImageFormat(inputBuffer: Buffer, targetFormat: 'jpeg' | 'jpg' | 'png' | 'bmp' | 'heic'): Promise<Buffer>
+```
+
+**参数：**
+- `inputBuffer`: 输入图片的 Buffer
+- `targetFormat`: 目标格式（支持 'jpeg' | 'jpg' | 'png' | 'bmp' | 'heic'）
+
+**返回值：**
+- `Promise<Buffer>`: 转换后的图片 Buffer
+
+**示例：**
+```javascript
+import fs from 'fs';
+import { convertImageFormat } from 'file-opt';
+
+const input = fs.readFileSync('input.jpg');
+const outputBuffer = await convertImageFormat(input, 'png');
+fs.writeFileSync('output.png', outputBuffer);
 ```
 
 ## 工具函数

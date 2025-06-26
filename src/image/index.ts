@@ -251,3 +251,5 @@ async function createImageFromFile(file: File): Promise<HTMLImageElement> {
   const dataURL = await blobToDataURL(file);
   return await dataURLToImage(dataURL);
 }
+
+export * from './convert';

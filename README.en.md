@@ -34,8 +34,8 @@ English | [简体中文](./README.md)
 - `dataURLtoBlob`: DataURL to Blob
 - `dataURLtoImgBlob`: DataURL to Image Blob
 - `dataURLtoFile`: DataURL to File
-- `imgConvert`: Image format conversion
 - `imgCompress`: Image compression
+- `convertImageFormat`: Image format conversion (Node.js, supports jpg/png/bmp/heic)
 
 ## Installation
 
@@ -102,6 +102,8 @@ fileToBase64(file).then(base64 => {
 ## API Documentation
 
 For more detailed API documentation, please check the [Complete API Documentation](./docs/API.en.md).
+
+For more about image format conversion, see the API documentation for convertImageFormat.
 
 ## Browser Compatibility
 

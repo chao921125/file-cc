@@ -274,6 +274,31 @@ const compressedFile = await imgCompress(imageFile, {
 console.log(`Original size: ${imageFile.size}, Compressed: ${compressedFile.size}`);
 ```
 
+### convertImageFormat
+
+Image format conversion (Node.js only, depends on sharp)
+
+```typescript
+async function convertImageFormat(inputBuffer: Buffer, targetFormat: 'jpeg' | 'jpg' | 'png' | 'bmp' | 'heic'): Promise<Buffer>
+```
+
+**Parameters:**
+- `inputBuffer`: The input image Buffer
+- `targetFormat`: Target format ('jpeg' | 'jpg' | 'png' | 'bmp' | 'heic')
+
+**Returns:**
+- `Promise<Buffer>`: The converted image Buffer
+
+**Example:**
+```javascript
+import fs from 'fs';
+import { convertImageFormat } from 'file-opt';
+
+const input = fs.readFileSync('input.jpg');
+const outputBuffer = await convertImageFormat(input, 'png');
+fs.writeFileSync('output.png', outputBuffer);
+```
+
 ## Utility Functions
 
 ### isBase64(str: string): boolean
