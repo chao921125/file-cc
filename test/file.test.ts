@@ -1,7 +1,7 @@
 /**
  * 文件操作函数测试
  */
-import { base64ToBlob, blobToBase64, blobToFile, fileToBlob, fileToBase64, base64ToFile, urlToBase64 } from './src/file';
+import { base64ToBlob, blobToBase64, blobToFile, fileToBlob, fileToBase64, base64ToFile, urlToBase64 } from '../src/file';
 
 // 模拟浏览器环境中的Blob和File对象
 class MockBlob {
