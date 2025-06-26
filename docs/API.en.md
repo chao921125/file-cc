@@ -279,12 +279,12 @@ console.log(`Original size: ${imageFile.size}, Compressed: ${compressedFile.size
 Image format conversion (Node.js only, depends on sharp)
 
 ```typescript
-async function convertImageFormat(inputBuffer: Buffer, targetFormat: 'jpeg' | 'jpg' | 'png' | 'bmp' | 'heic'): Promise<Buffer>
+async function convertImageFormat(inputBuffer: Buffer, targetFormat: 'jpeg' | 'jpg' | 'png' | 'heic'): Promise<Buffer>
 ```
 
 **Parameters:**
 - `inputBuffer`: The input image Buffer
-- `targetFormat`: Target format ('jpeg' | 'jpg' | 'png' | 'bmp' | 'heic')
+- `targetFormat`: Target format ('jpeg' | 'jpg' | 'png' | 'heic')
 
 **Returns:**
 - `Promise<Buffer>`: The converted image Buffer

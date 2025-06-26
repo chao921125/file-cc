@@ -4,7 +4,7 @@
 /**
  * 图片格式类型
  */
-export type ImageFormat = 'jpeg' | 'png' | 'gif' | 'webp' | 'bmp';
+export type ImageFormat = 'jpeg' | 'png' | 'gif' | 'webp';
 /**
  * 图片压缩选项
  */

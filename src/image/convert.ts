@@ -1,11 +1,11 @@
 import sharp from 'sharp';
 
-export type SupportedImageFormat = 'jpeg' | 'jpg' | 'png' | 'bmp' | 'heic';
+export type SupportedImageFormat = 'jpeg' | 'jpg' | 'png' | 'heic';
 
 /**
  * 图片格式转换（Node.js 环境，依赖 sharp）
  * @param inputBuffer 输入图片 Buffer
- * @param targetFormat 目标格式（jpeg/jpg/png/bmp/heic）
+ * @param targetFormat 目标格式（jpeg/jpg/png/heic）
  * @returns Promise<Buffer> 转换后的图片 Buffer
  */
 export async function convertImageFormat(
@@ -20,9 +20,6 @@ export async function convertImageFormat(
       break;
     case 'png':
       transformer = transformer.png();
-      break;
-    case 'bmp':
-      transformer = transformer.bmp();
       break;
     case 'heic':
       transformer = transformer.heif({ compression: 'hevc' });

@@ -36,6 +36,11 @@ class MockBlob {
   text(): Promise<string> {
     return Promise.resolve(this.data.join(''));
   }
+
+  async bytes(): Promise<Uint8Array> {
+    // 简单模拟，返回 data 的 Uint8Array
+    return new Uint8Array(Buffer.from(this.data.join('')));
+  }
 };
 
 global.Blob = MockBlob as any;

@@ -392,12 +392,12 @@ console.log(`原大小: ${imageFile.size}, 压缩后: ${compressedFile.size}`);
 图片格式互转（Node.js 环境，依赖 sharp）
 
 ```typescript
-async function convertImageFormat(inputBuffer: Buffer, targetFormat: 'jpeg' | 'jpg' | 'png' | 'bmp' | 'heic'): Promise<Buffer>
+async function convertImageFormat(inputBuffer: Buffer, targetFormat: 'jpeg' | 'jpg' | 'png' | 'heic'): Promise<Buffer>
 ```
 
 **参数：**
 - `inputBuffer`: 输入图片的 Buffer
-- `targetFormat`: 目标格式（支持 'jpeg' | 'jpg' | 'png' | 'bmp' | 'heic'）
+- `targetFormat`: 目标格式（支持 'jpeg' | 'jpg' | 'png' | 'heic'）
 
 **返回值：**
 - `Promise<Buffer>`: 转换后的图片 Buffer

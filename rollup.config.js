@@ -1,8 +1,11 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
-import { terser } from 'rollup-plugin-terser';
-import pkg from './package.json';
+import terser from '@rollup/plugin-terser';
+import json from '@rollup/plugin-json';
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const pkg = require('./package.json');
 
 export default [
   // UMD build for browsers
@@ -18,6 +21,7 @@ export default [
     plugins: [
       resolve(),
       commonjs(),
+      json(),
       typescript({ tsconfig: './tsconfig.json' }),
       terser()
     ]
@@ -42,6 +46,7 @@ export default [
     plugins: [
       resolve(),
       commonjs(),
+      json(),
       typescript({ tsconfig: './tsconfig.json' })
     ]
   }

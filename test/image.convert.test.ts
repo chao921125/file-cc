@@ -6,7 +6,7 @@ describe('图片格式互转 convertImageFormat', () => {
   const inputJpg = fs.readFileSync(path.join(__dirname, 'fixtures/sample.jpg'));
   const inputPng = fs.readFileSync(path.join(__dirname, 'fixtures/sample.png'));
 
-  const formats: SupportedImageFormat[] = ['jpeg', 'png', 'bmp'];
+  const formats: SupportedImageFormat[] = ['jpeg', 'png'];
 
   it.each(formats)('JPG 转 %s', async (target) => {
     const buf = await convertImageFormat(inputJpg, target);
@@ -14,7 +14,6 @@ describe('图片格式互转 convertImageFormat', () => {
     // 简单判断输出格式
     if (target === 'jpeg') expect(buf.slice(0, 2).toString('hex')).toBe('ffd8');
     if (target === 'png') expect(buf.slice(0, 8).toString('hex')).toBe('89504e470d0a1a0a');
-    if (target === 'bmp') expect(buf.slice(0, 2).toString('ascii')).toBe('BM');
   });
 
   it.each(formats)('PNG 转 %s', async (target) => {
@@ -22,7 +21,6 @@ describe('图片格式互转 convertImageFormat', () => {
     expect(Buffer.isBuffer(buf)).toBe(true);
     if (target === 'jpeg') expect(buf.slice(0, 2).toString('hex')).toBe('ffd8');
     if (target === 'png') expect(buf.slice(0, 8).toString('hex')).toBe('89504e470d0a1a0a');
-    if (target === 'bmp') expect(buf.slice(0, 2).toString('ascii')).toBe('BM');
   });
 
   it('不支持的格式应抛出异常', async () => {
