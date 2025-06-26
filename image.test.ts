@@ -1,8 +1,8 @@
 /**
  * 图片操作函数测试
  */
-import { dataURLtoBlob, dataURLtoFile, imgConvert, imgCompress, blobToDataURL, imageToDataURL, dataURLToImage, dataURLtoImgBlob } from '../image';
-import { ImageFormat } from '../types';
+import { dataURLtoBlob, dataURLtoFile, imgConvert, imgCompress, blobToDataURL, imageToDataURL, dataURLToImage, dataURLtoImgBlob } from './src/image';
+import { ImageFormat } from './src/types';
 
 // 模拟浏览器环境中的HTMLImageElement
 class MockImage {
@@ -333,11 +333,11 @@ describe('图片操作函数测试', () => {
     } as any;
     
     // 模拟 blobToDataURL 函数
-    const blobToDataURLSpy = jest.spyOn(require('../image'), 'blobToDataURL')
+    const blobToDataURLSpy = jest.spyOn(require('./src/image'), 'blobToDataURL')
       .mockImplementation(() => Promise.resolve('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD'));
     
     // 模拟 getMimeTypeFromExtension 函数返回空字符串
-    const getMimeTypeFromExtensionSpy = jest.spyOn(require('../utils'), 'getMimeTypeFromExtension')
+    const getMimeTypeFromExtensionSpy = jest.spyOn(require('./src/utils'), 'getMimeTypeFromExtension')
       .mockImplementation((extension) => {
         if (extension === 'unsupported') {
           return '';

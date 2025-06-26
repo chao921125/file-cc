@@ -11,8 +11,9 @@ import {
   checkFileType,
   generateRandomFileName,
   getMimeTypeFromDataURL,
-  getBase64FromDataURL
-} from '../utils';
+  getBase64FromDataURL,
+  delay
+} from './src/utils';
 
 describe('工具函数测试', () => {
   describe('类型检查函数', () => {
