@@ -55,4 +55,3 @@ export declare function imgConvert(imageFile: File, options: ImageConvertOptions
  * @returns Promise<File> 压缩后的文件
  */
 export declare function imgCompress(imageFile: File, options?: ImageCompressOptions): Promise<File>;
-export * from './convert';

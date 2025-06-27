@@ -36,7 +36,6 @@
 - `dataURLtoFile`: DataURL转文件
 - `imgConvert`: 图片格式转换
 - `imgCompress`: 图片压缩
-- `convertImageFormat`: 图片格式互转（Node.js 环境，支持 jpg/png/heic）
 
 ## 安装
 
@@ -103,8 +102,6 @@ fileToBase64(file).then(base64 => {
 ## API 文档
 
 更多详细的 API 文档请查看 [完整 API 文档](./docs/API.md)。
-
-更多图片格式互转请见 API 文档 convertImageFormat。
 
 ## 浏览器兼容性
 

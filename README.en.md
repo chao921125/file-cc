@@ -35,7 +35,6 @@ English | [简体中文](./README.md)
 - `dataURLtoImgBlob`: DataURL to Image Blob
 - `dataURLtoFile`: DataURL to File
 - `imgCompress`: Image compression
-- `convertImageFormat`: Image format conversion (Node.js, supports jpg/png/heic)
 
 ## Installation
 
