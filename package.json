@@ -1,6 +1,6 @@
 {
 	"name": "file-opt",
-	"version": "1.4.2",
+	"version": "1.4.3",
 	"description": "File operations, including file to Base64, image compression, and other file-related utilities, suitable for both browser and Node.js environments.",
 	"keywords": [
 		"file",
